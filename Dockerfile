@@ -13,7 +13,7 @@ RUN set -ex \
   && rm -rf /var/lib/apt/lists/* /var/lib/apt/lists/partial/* /tmp/* /var/tmp/*
 
 # Download github Stuff from zeromq/libzmq
-RUN https://github.com/zeromq/libzmq
+RUN git clone https://github.com/zeromq/libzmq
 WORKDIR /libzmq
 # Install libzmq from github
 RUN ./autogen.sh
