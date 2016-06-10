@@ -1,3 +1,5 @@
+##The code is documentation enough!
+
 import os
 import subprocess
 import sys
